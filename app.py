@@ -6,6 +6,7 @@ from analysis import analyze_code
 from celery import Celery
 from celery.result import AsyncResult
 import json
+from readability import Readability
 
 app = Flask(__name__)
 app.secret_key = config.SECRET_KEY
